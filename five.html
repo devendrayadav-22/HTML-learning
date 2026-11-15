@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About list and tables</title>
+</head>
+<body>
+    <header>
+        <h1>Learn about lists and tables</h1>
+    </header>
+    <main>
+        <h2>Ordered list</h2>
+        <ol>
+            <li>List item first</li>
+            <li>List item second</li>
+            <li>List item third</li>
+            <li>List item fourth</li>
+        </ol>
+
+        <h2>Unordered List</h2>
+        <ul>
+            <li>list item first</li>
+            <li>List item second</li>
+            <li>List item third</li>
+            <li>List item fourth</li>
+        </ul>
+
+        <h2>Definition List</h2>
+        <dl>
+            <!-- dt - definition term, dd - definition data -->
+            <dt> HTML </dt>
+            <dd>Hyper Text Markup Lang</dd>
+
+            <dt>CSS</dt>
+            <dd>Cascading style sheet</dd>
+
+            <dt>js</dt>
+            <dd>JavaScript - used to create dynamic webpages, means add functionality</dd>
+        </dl>
+
+        <hr><hr>
+        <h2>Table section</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll No</th>
+                    <th>branch</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dev</td>
+                    <td>101</td>
+                    <td>IT</td>
+                </tr>
+                <tr>
+                    <td>Harsh</td>
+                    <td>102</td>
+                    <td>AIML</td>
+                </tr>
+                <tr>
+                    <td>Rana</td>
+                    <td>103</td>
+                    <td>Data Science</td>
+                </tr>
+                <tr>
+                    <td colspan="3">creted by Dev</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr><hr>
+        <h2>From learning</h2>
+        <form action="/submit.txt">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your eamil" required>
+            </div>
+            <div>
+                <label for="phone">Phone No</label>
+                <input type="tel" id="phone" placeholder="Enter your Mobile number" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" placeholder="Enter your DOB" required>
+            </div>
+            <div>
+                <label for="gender">Gendre</label>
+                <select id="gender">
+                    <option value="" disabled selected>Select gender</option>
+                    <option value="Make">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div>
+                <p>Select you Year</p>
+                <input type="radio" id="first" name="Year" value="first">
+                <label for="first">1<sup>st</sup>Year</label>
+
+                <input type="radio" name="Year" id="second" value="second">
+                <label for="second">2<sup>nd</sup>Year</label>
+
+                <input type="radio" name="Year" id="third" value="third">
+                <label for="third">3<sup>nd</sup>Year</label>
+
+                <input type="radio" name="Year" id="final" value="final">
+                <label for="final">Final Year</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="fee-status" required>
+                <label for="fee-status">Your fee is paid</label>
+            </div>
+
+            <div>
+                <label for="feedback">Your Feedback</label>
+                <textarea placeholder="Enter your valueable feedback" id="feedback" rows="5"></textarea>
+            </div>
+            <div>
+                <button id="btn">Submit Form</button>
+            </div>
+        </form>
+
+        <hr><hr>
+        <video src="mixkit-flying-over-a-relaxing-creek-full-of-rock-on-the-51585-hd-ready.mp4" width="550" autoplay muted controls loop>
+            Sorry video is unavailable
+        </video>
+            <br><br>
+        <video width="550" autoplay loop preload="true">
+            <source src="mixkit-flying-over-a-relaxing-creek-full-of-rock-on-the-51585-hd-ready.mp4" type="video/mp4">
+            Your browser is not supported
+        </video>
+            <br><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/k2DSi1zGEc8?si=8ZkQbq1hwfcxhGDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+</body>
+</html>
