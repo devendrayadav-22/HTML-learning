@@ -1,0 +1,135 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0b1020;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 50px 7%;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+header h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  background: linear-gradient(90deg, #60a5fa, #c084fc, #f472b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+header h1::after {
+  content: '';
+  display: block;
+  width: 75px;
+  height: 4px;
+  background: linear-gradient(90deg, #60a5fa, #c084fc);
+  margin: 18px auto 0;
+  border-radius: 10px;
+}
+
+/* Main Grid */
+main {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+/* Website Cards */
+main div {
+  background: #151d32;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 22px;
+  overflow: hidden;
+  transition: transform 0.35s ease, border-color 0.35s ease,
+              box-shadow 0.35s ease;
+}
+
+main div:hover {
+  transform: translateY(-10px);
+  border-color: rgba(139, 92, 246, 0.7);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Images */
+main div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  height: 160px;
+  border-radius: 12px;
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+
+main div img {
+  max-width: 85%;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+main div:hover img {
+  transform: scale(1.08);
+}
+
+/* Description */
+main div p {
+  color: #aab5ca;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #7f8ba3;
+  font-size: 13px;
+  margin-top: 65px;
+  padding: 22px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 35px 18px;
+  }
+
+  header {
+    margin-bottom: 35px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  main div {
+    padding: 18px;
+  }
+
+  footer {
+    margin-top: 40px;
+  }
+}
